@@ -1,3 +1,13 @@
+:root{
+    --white: rgba(245, 245, 245, 0.913);
+    --black: rgba(0, 0, 0, 0.199);
+    --dark: rgba(0, 0, 0, 0.881);
+    --oro: rgba(234, 190, 63);
+    --red: rgba(178, 34, 34, 0.826);
+    --gray: rgba(128, 128, 128, 0.783);
+    --grey: rgba(225, 218, 218, 0.831);
+}
+
 html{
     background: whitesmoke;
     display: flex;
@@ -7,26 +17,27 @@ html{
 
 .text-center{
     text-align: center;
-    color: rgba(0, 0, 0, 0.881);;
+    color: var(--dark);
     text-transform: uppercase;
 }
 
 #calculator{
-    background-color: rgba(0, 0, 0, 0.881);
+    background-color: var(--dark);
     border-radius: 3rem;
     height: 38rem;
     width: 26rem;
+    box-shadow:  10px 10px 30px #636161,-10px -10px 30px #3e3e3e;
 }
 
 #calculator input[type="textfield"]{
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: var(--black);
     width: 90%;
-    height: 20%;
     border-radius: 3rem;
     margin: 1rem;
+    padding-right: 0.5rem;
     text-align: right;
     font-size: 7rem;
-    color: rgba(225, 218, 218, 0.831);;
+    color: var(--grey);
 }
 
 .btn{   
@@ -35,42 +46,58 @@ html{
     background: whitesmoke;
     border-radius: 50%;
     font-size: 3rem;
-    color: rgba(128, 128, 128, 0.783);
+    color: var(--gray);
+    border:none;
     cursor: pointer;
-    border: none;
+    transform: scale(1);
+    transition: 0.5s;  
 }
 
-.btn-three{
-    display: flex;
-    padding: 0.2rem 1rem;
-    justify-content: space-between;
+.btn:hover{   
+    background: var(--white);
+    font-size: 4rem;
+    color: var(--dark);
+    transform: scale(1.1);
+    transition: 0.5s;  
 }
 
-.btn-four{
+.row{
     display: flex; 
     padding: 0.2rem 1rem;
     justify-content: space-between;
 }
 
-
-.btn-white {
-    background-color: rgba(245, 245, 245, 0.913);  
+.btn-white{
+    background-color: var(--white);  
 }
 
 .btn-gray{
-    background-color: rgba(128, 128, 128, 0.783);
+    background-color: var(--gray);
 }
 
-.btn-operator {
-    background: rgba(178, 34, 34, 0.826);
+.btn-gray:hover{
+    background-color: var(--red);
+}
+
+.btn-operator{
+    background: var(--red);
+    font-size: 3.5rem;
+}
+
+.btn-ac{
+    background: var(--oro);
+    color: var(--dark);
+}
+
+.btn-ac:hover{
+    background: var(--oro);
 }
 
 .btn-big{
-    width: 11.5rem;
-    height: 5rem;
+    width: 50%;
     border-radius: 3rem;     
 }
 
 .btn-text-white{
-    color: rgba(245, 245, 245, 0.913);
+    color: var(--white);
 }

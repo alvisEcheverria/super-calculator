@@ -17,31 +17,31 @@
     </div>
     <section id="calculator"> 
         <form name="calculadora">
-            <input type="textfield" name="respuesta" value="" readonly>
-                <div class="btn-three">
-                    <input class="btn btn-big btn-white" type="reset" value="AC">
-                    <input class="btn btn-white" type="button" value="%" onclick="document.calculadora.respuesta.value+='* 0.01'">
-                    <input class="btn btn-text-white btn-operator" type="button" value="/" onclick="document.calculadora.respuesta.value+='/'">
+            <input type="textfield" name="respuesta" value="" autocomplete="off">
+                <div class="row">
+                    <input class="btn btn-big btn-ac btn-white" type="reset" value="AC">
+                    <input class="btn btn-white" type="button" value="%" onclick="document.calculadora.respuesta.value+='*0.01'">
+                    <input class="btn btn-text-white btn-operator" type="button" value="÷" onclick="document.calculadora.respuesta.value+='/'">
                 </div>
-                <div class="btn-four">
+                <div class="row">
                     <input class="btn btn-text-white btn-gray" type="button" value="7" onclick="document.calculadora.respuesta.value+='7'">
                     <input class="btn btn-text-white btn-gray" type="button" value="8" onclick="document.calculadora.respuesta.value+='8'">
                     <input class="btn btn-text-white btn-gray" type="button" value="9" onclick="document.calculadora.respuesta.value+='9'">
-                    <input class="btn btn-text-white btn-operator" type="button" value="X" onclick="document.calculadora.respuesta.value+='*'">
+                    <input class="btn btn-text-white btn-operator" type="button" value="×" onclick="document.calculadora.respuesta.value+='*'">
                 </div>
-                <div class="btn-four">
+                <div class="row">
                     <input class="btn btn-text-white btn-gray" type="button" value="4" onclick="document.calculadora.respuesta.value+='4'">
                     <input class="btn btn-text-white btn-gray" type="button" value="5" onclick="document.calculadora.respuesta.value+='5'">
                     <input class="btn btn-text-white btn-gray" type="button" value="6" onclick="document.calculadora.respuesta.value+='6'">
                     <input class="btn btn-text-white btn-operator" type="button" value="-" onclick="document.calculadora.respuesta.value+='-'">
                 </div>
-                 <div class="btn-four">
+                 <div class="row">
                     <input class="btn btn-text-white btn-gray" type="button" value="1" onclick="document.calculadora.respuesta.value+='1'">
                     <input class="btn btn-text-white btn-gray" type="button" value="2" onclick="document.calculadora.respuesta.value+='2'">
                     <input class="btn btn-text-white btn-gray" type="button" value="3" onclick="document.calculadora.respuesta.value+='3'">
                     <input class="btn btn-text-white btn-operator" type="button" value="+" onclick="document.calculadora.respuesta.value+='+'">
                 </div>
-                <div class="btn-three">
+                <div class="row">
                     <input class="btn btn-text-white btn-gray" type="button" value="0" onclick="document.calculadora.respuesta.value+='0'">
                     <input class="btn btn-text-white btn-gray" type="button" value="." onclick="document.calculadora.respuesta.value+='.'">
                     <input class="btn btn-big btn-text-white btn-operator" type="button" value="=" onclick="document.calculadora.respuesta.value=eval(document.calculadora.respuesta.value)">
